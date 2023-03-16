@@ -1,10 +1,13 @@
 {
+  "homepage": "http://mrko147.github.io/CW3CST3145",
   "name": "sfc1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
@@ -15,7 +18,8 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "gh-pages": "^5.0.0"
   },
   "browserslist": [
     "> 1%",
